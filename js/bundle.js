@@ -5695,13 +5695,13 @@ AOS.init({
 						point = current_map.attr('data-marker'),
 
 						center = {
-							lat: 40.730610,
-							lng: -73.935242,
+                            lat: -22.906080,
+                            lng: -43.555210
 						},
 
 						markerPos = {
-							lat: 40.730610,
-							lng: -73.935242,
+							lat: -22.906080,
+							lng: -43.555210
 						},
 
 						myOptions = {
@@ -5714,123 +5714,124 @@ AOS.init({
 							draggable: true,
 							panControl: false,
 							zoomControl: false,
-							disableDefaultUI: true,
-							styles: [
-								{
-									"featureType": "administrative",
-									"elementType": "labels.text.fill",
-									"stylers": [
-										{
-											"color": "#212326"
-										}
-									]
-								},
-								{
-									"featureType": "administrative.locality",
-									"elementType": "labels.text.fill",
-									"stylers": [
-										{
-											"color": "#464646"
-										}
-									]
-								},
-								{
-									"featureType": "landscape",
-									"elementType": "all",
-									"stylers": [
-										{
-											"color": "#F8F8F9"
-										}
-									]
-								},
-								{
-									"featureType": "poi",
-									"elementType": "all",
-									"stylers": [
-										{
-											"visibility": "off"
-										}
-									]
-								},
-								{
-									"featureType": "road",
-									"elementType": "all",
-									"stylers": [
-										{
-											"saturation": -100
-										},
-										{
-											"lightness": 45
-										}
-									]
-								},
-								{
-									"featureType": "road",
-									"elementType": "labels",
-									"stylers": [
-										{
-											"visibility": "on"
-										}
-									]
-								},
-								{
-									"featureType": "road",
-									"elementType": "labels.icon",
-									"stylers": [
-										{
-											"visibility": "on"
-										}
-									]
-								},
-								{
-									"featureType": "transit",
-									"elementType": "all",
-									"stylers": [
-										{
-											"visibility": "on"
-										}
-									]
-								},
-								{
-									"featureType": "road.highway",
-									"elementType": "all",
-									"stylers": [
-										{
-											"visibility": "on"
-										}
-									]
-								},
-								{
-									"featureType": "road.arterial",
-									"elementType": "labels.icon",
-									"stylers": [
-										{
-											"visibility": "on"
-										}
-									]
-								},
-								{
-									"featureType": "transit",
-									"elementType": "all",
-									"stylers": [
-										{
-											"visibility": "on"
-										}
-									]
-								},
-								{
-									"featureType": "water",
-									"elementType": "all",
-									"stylers": [
-										{
-											"color": "#E2E3E7"
-										},
-										{
-											"visibility": "on"
-										}
-									]
-								}
-							]
+                            disableDefaultUI: true,
+                            styles: [
+                                {
+                                    "featureType": "administrative",
+                                    "elementType": "labels.text.fill",
+                                    "stylers": [
+                                        {
+                                            "color": "#212326"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative.locality",
+                                    "elementType": "labels.text.fill",
+                                    "stylers": [
+                                        {
+                                            "color": "#464646"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "color": "#F8F8F9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                         
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "saturation": -100
+                                        },
+                                        {
+                                            "lightness": 45
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "labels",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.highway",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.arterial",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "water",
+                                    "elementType": "all",
+                                    "stylers": [
+                                        {
+                                            "color": "#E2E3E7"
+                                        },
+                                        {
+                                            "visibility": "on"
+                                        }
+                                    ]
+                                }
+                            ]                     
+							
 						};
 
 					var map = new google.maps.Map(current_map[0], myOptions);
@@ -5840,8 +5841,7 @@ AOS.init({
 						icon: {
 							size: new google.maps.Size(59,69),
 							origin: new google.maps.Point(0,0),
-							anchor: new google.maps.Point(0,69),
-							url: point
+							anchor: new google.maps.Point(0,69)						
 						},
 						position: markerPos
 					});
